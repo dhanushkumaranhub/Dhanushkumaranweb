@@ -1,6 +1,190 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 
+/* Body and general layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the top */
+    align-items: flex-start;
+    /* Align items to the top */
+    min-height: 100vh;
+    /* Ensure the page height is at least 100vh */
+    background-color: #f7f7f7;
+    overflow: auto;
+    /* Enable scrolling if content overflows */
+}
+
+/* Contact Form */
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    /* Center the form with some margin */
+}
+
+/* Heading inside the form */
+.contact-form h2 {
+    text-align: center;
+}
+
+/* Form input fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid #4CAF50;
+}
+
+/* Submit button */
+.contact-form button {
+    background-color: #E95793;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    /* Allow scrolling inside the popup */
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transform: scale(0);
+    animation: popupScale 0.3s ease-out forwards;
+}
+
+.popup-content input {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #E95793;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+    background-color: #E95793;
+}
+
+/* Animation for popup */
+@keyframes popupScale {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Contact and Footer Section */
+.contact {
+    margin: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Social Media Links in Footer */
+footer .socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-link ion-icon {
+    font-size: 24px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover ion-icon {
+    color: #4CAF50;
+    transform: scale(1.2);
+}
+
+/* Ensure that all elements are correctly aligned */
+* {
+    box-sizing: border-box;
+}
+
+/* Allow page content to scroll if it's longer than the viewport */
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .container {
